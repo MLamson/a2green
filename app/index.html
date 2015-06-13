@@ -8,6 +8,7 @@
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -17,23 +18,34 @@
   </head>
   <body>
 
-    <div class="hero-unit">
-      <h1>'Sup</h1>
-      <p>You now have</p>
-      <ul>
-        <li>HTML Template</li>
-        <li>Normalize CSS</li>
-        <li>Sass</li>
+    <ul class="nav nav-tabs nav-justified">
+      <li role="presentation" class="active"><a href="#">Home</a></li>
+      <li role="presentation"><a href="#">Search</a></li>
+      <li role="presentation"><a href="#">Sort</a></li>
+      <li role="presentation"><a href="#">Growth Guidance</a></li>
+      <li role="presentation"><a href="#">Resources</a></li>
+      <li role="presentation"><a href="#">A2G Expos</a></li>
+      <li role="presentation"><a href="#">My Account</a></li>
+    </ul>
 
-        <li>UnderscoreJS</li>
-      </ul>
-      <p>Don't forget to update your readme file.</p>
+
+    <!--Jumbotron for bootstrap-->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Advance to Green</h1>
+        <p>Turning green concpts into reality</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+      </div>
     </div>
+    <!--end of jumbotron from boot strap-->
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <script src="../bower_components/underscore/underscore.js"></script>
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    
     <!-- endbower -->
     <!-- endbuild -->
 
