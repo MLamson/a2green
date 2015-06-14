@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html ng-app="greenApp">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
@@ -28,22 +28,47 @@
       <li role="presentation"><a href="#">My Account</a></li>
     </ul>
 
+    <div ng-view></div><!--angular view to connect to route-->
 
     <!--Jumbotron for bootstrap-->
     <div class="jumbotron">
       <div class="container">
         <h1>Advance to Green</h1>
-        <p>Turning green concpts into reality</p>
+        <p>Turning green concepts into reality</p>
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
       </div>
     </div>
     <!--end of jumbotron from boot strap-->
+
+    <!--homepage main sections-->
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Latest News</h3>
+        <img class="img-responsive" src="../images/recycle.jpg" />
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
+      </div>
+      <div class="col-md-6">
+        <h3>Top Ideas</h3>
+        <img class="img-responsive" src="../images/solar.jpg" />
+        <p>Lorem Ipsum Dolor Sit Amet, Consectetuer Adipiscing Elit. Nam Cursus. Morbi Ut Mi. Nullam Enim Leo, Egestas Id, Condimentum At, Laoreet Mattis, Massa. Sed Eleifend Nonummy Diam. Praesent Mauris Ante, Elementum Et, Bibendum At, Posuere Sit Amet, Nibh. Duis Tincidunt Lectus Quis Dui Viverra Vestibulum. Suspendisse Vulputate Aliquam Dui. Nulla Elementum Dui Ut Augue. Aliquam Vehicula Mi At Mauris. Maecenas Placerat, Nisl At Consequat Rhoncus, Sem Nunc Gravida Justo, Quis Eleifend Arcu Velit Quis Lacus. Morbi Magna Magna, Tincidunt A, Mattis Non, Imperdiet Vitae, Tellus. Sed Odio Est, Auctor Ac, Sollicitudin In, Consequat Vitae, Orci. Fusce Id Felis. Vivamus Sollicitudin Metus Eget Eros.</p>
+      </div>
+    </div>    
+    <!--end homepage main sections-->
+
+    <!--footer-->
+      <div class="row footer">
+        <div class="col-md-4 footer1">Contact Administrator</div>
+        <div class="col-md-4 footer2">Built By</div>
+        <div class="col-md-4 footer3">Something Else</div>
+      </div>
+    <!--End footer-->
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <script src="../bower_components/underscore/underscore.js"></script>
     <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="../bower_components/angular-route/angular-route.min.js"></script>
     <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     
     <!-- endbower -->

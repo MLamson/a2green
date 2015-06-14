@@ -4,10 +4,35 @@ body {
   background: #fafafa;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.nav-tabs {
+  
 }
 
 .jumbotron {
   background-image: url(../images/forest.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+
+    .container {
+      padding-left: 100px;
+    }//container closing bracket
+}//jumbotron closing bracket
+
+.footer {
+
+}
+
+.footer1 {
+  background-color: blue;
+}
+
+.footer2 {
+  background-color: green;
+}
+
+.footer3 {
+  background-color: brown;
 }
