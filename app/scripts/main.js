@@ -1,33 +1,53 @@
 var greenApp = angular.module('greenApp', ['ngRoute']);
 
-myApp.config(function ($routeProvider) {
+greenApp.config(function ($routeProvider) {
     
     $routeProvider
     
     .when('/', {
-        templateUrl: 'pages/main.html',
+        templateUrl: 'pages/home.html',
         controller: 'mainController'
     })
     
-    .when('/second', {
-        templateUrl: 'pages/second.html',
+    .when('/search', {
+        templateUrl: 'pages/search.html',
         controller: 'secondController'
     })
     
-    .when('/second/:num', {
-        templateUrl: 'pages/second.html',
+    .when('/sort', {
+        templateUrl: 'pages/sort.html',
+        controller: 'secondController'
+    })
+
+    .when('/growth', {
+        templateUrl: 'pages/growth.html',
+        controller: 'secondController'
+    })
+
+    .when('/resources', {
+        templateUrl: 'pages/resources.html',
+        controller: 'secondController'
+    })
+
+    .when('/expos', {
+        templateUrl: 'pages/expos.html',
+        controller: 'secondController'
+    })
+
+    .when('/account', {
+        templateUrl: 'pages/account.html',
         controller: 'secondController'
     })
     
 });
 
-myApp.controller('mainController', ['$scope', '$log', function($scope, $log) {
+greenApp.controller('mainController', ['$scope', '$log', function($scope, $log) {
     
     $scope.name = 'Main';
     
 }]);
 
-myApp.controller('secondController', ['$scope', '$log', '$routeParams', function($scope, $log, $routeParams) {
+greenApp.controller('secondController', ['$scope', '$log', '$routeParams', function($scope, $log, $routeParams) {
     
     $scope.num = $routeParams.num || 1;
     
